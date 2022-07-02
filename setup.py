@@ -33,7 +33,4 @@ print("Installing requirements..")
 os.system(f"{sys.executable} -m pip install -r requirements.txt")
 print("Successfully installed requirements!")
 
-os.remove("requirements.txt")
-os.remove("setup.py")
-
 print("Ready!")
