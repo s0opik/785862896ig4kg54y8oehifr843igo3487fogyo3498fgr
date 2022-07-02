@@ -4,6 +4,9 @@ from os.path import join, dirname
 from dotenv import load_dotenv
 from str2bool import str2bool
 from XxTheChildPredatorxX import Captcha, RBLXWild, LoadFromEnv
+from updater import check_update
+
+check_update
 
 def strip(message):
     try:
@@ -12,7 +15,7 @@ def strip(message):
         return json.loads(re.sub(r'\d+\[', '[', message))
 
 print("made by Alanishere#7667 and Alii#3333")
-print("v1.4")
+print("v1.5, next update 7/4/2022?")
 
 dotenv_path = join(dirname(__file__), ".env")
 load_dotenv(dotenv_path)
