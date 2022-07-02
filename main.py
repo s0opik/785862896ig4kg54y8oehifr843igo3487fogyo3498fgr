@@ -6,7 +6,7 @@ from str2bool import str2bool
 from XxTheChildPredatorxX import Captcha, RBLXWild, LoadFromEnv
 from updater import check_update
 
-check_update
+check_update()
 
 def strip(message):
     try:
