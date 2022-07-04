@@ -27,10 +27,10 @@ PROXY1=proxy (idk get it yourself)
 """)
 
 env_file.close()
-print("Successfully created .env file!")
+print("Created .env file!")
 
 print("Installing requirements..")
 os.system(f"{sys.executable} -m pip install -r requirements.txt")
-print("Successfully installed requirements!")
+print("Installed requirements!")
 
 print("Ready!")
