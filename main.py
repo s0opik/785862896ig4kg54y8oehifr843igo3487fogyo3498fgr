@@ -3,7 +3,7 @@ sys.dont_write_bytecode = True
 from os.path import join, dirname
 from dotenv import load_dotenv
 from str2bool import str2bool
-from XxTheChildPredatorxX import Captcha, RBLXWild, LoadFromEnv, check_update
+from XxTheChildPredatorxX import Cumtcha, ROBLOCKSWELD, LoadFromEnv, check_update
 
 check_update()
 
@@ -14,7 +14,7 @@ def strip(message):
         return json.loads(re.sub(r'\d+\[', '[', message))
 
 print("made by Alanishere#7667 and Alii#3333")
-print("v1.7")
+print("v1.8")
 
 
 dotenv_path = join(dirname(__file__), ".env")
@@ -27,7 +27,7 @@ pot_id = 0
 accounts = LoadFromEnv()
 print(f"{len(accounts)} accounts loaded")
 
-captcha = Captcha()
+captcha = Cumtcha()
 captcha.APIKey = APIKEY_2CAPTCHA
 
 def join_pot(account, pot_id):
@@ -60,7 +60,7 @@ async def handle_msg(websocket):
 
             elif msg[1]["newState"] == "ENDED":
                 pot_id += 1
-                print("Rain ended!")
+                print("Rain ended.")
                 print(f"2Captcha balance: {captcha.Balance()}$!")
 
 async def async_main(uri):
@@ -84,4 +84,4 @@ async def async_main(uri):
 try:
     asyncio.run(async_main("wss://rblxwild.com/socket.io/?EIO=4&transport=websocket"))
 except KeyboardInterrupt:
-    print("u inerrupted the program frrr")
+    print("u interrupted the program frrr.")
