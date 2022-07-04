@@ -14,7 +14,7 @@ def strip(message):
         return json.loads(re.sub(r'\d+\[', '[', message))
 
 print("made by Alanishere#7667 and Alii#3333")
-print("v1.6.1")
+print("v1.7")
 
 
 dotenv_path = join(dirname(__file__), ".env")
