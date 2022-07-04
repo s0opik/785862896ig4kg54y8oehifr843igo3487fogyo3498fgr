@@ -61,7 +61,7 @@ async def handle_msg(websocket):
             elif msg[1]["newState"] == "ENDED":
                 pot_id += 1
                 print("Rain ended!")
-                print(f"2Captcha bal: {captcha.Balance()}$!")
+                print(f"2Captcha balance: {captcha.Balance()}$!")
 
 async def async_main(uri):
     async for websocket in websockets.connect(uri):
