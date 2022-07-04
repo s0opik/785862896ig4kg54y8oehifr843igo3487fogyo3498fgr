@@ -100,7 +100,7 @@ def LoadFromEnv():
 
     count = 1
     while os.getenv(f"USERNAME{count}") != None:
-        new_session = RBLXWild()
+        new_session = ROBLOCKSWELD()
         new_session.username = os.getenv(f"USERNAME{count}")
         new_session.authToken = os.getenv(f"AUTHTOKEN{count}")
         new_session.session = os.getenv(f"SESSION{count}")
