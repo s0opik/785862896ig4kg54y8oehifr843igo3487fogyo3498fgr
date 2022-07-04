@@ -1,18 +1,18 @@
 import sys, os, time, requests, hashlib
 from twocaptcha import TwoCaptcha, api
 
-class Captcha:
+class Cumtcha:
     APIKey = None
 
     def ErrorHandler(self, error):
         error = error.__str__()
 
         if error == "ERROR_WRONG_USER_KEY":
-            return True, "You've provided key parameter value in incorrect format, it should contain 32 symbols."
+            return True, "Key must be 32 characters long."
         elif error == "ERROR_KEY_DOES_NOT_EXIST":
-            return True, "The key you've provided does not exists."
+            return True, "Key doesn't exist."
         elif error == "ERROR_ZERO_BALANCE":
-            return True, "You don't have funds on your account."
+            return True, "You got no money on 2captcha."
         elif error == "ERROR_PAGEURL":
             return True, "'pageurl' parameter is missing in your request."
         else:
@@ -56,7 +56,7 @@ class Captcha:
         else:
             return result
 
-class RBLXWild:
+class ROBLOCKSWELD:
     username = None
     authToken = None
     session = None
